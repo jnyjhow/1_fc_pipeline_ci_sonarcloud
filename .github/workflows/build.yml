@@ -1,9 +1,12 @@
 name: fc-ci-sonarcloud
 
 on:
-  pull_request:
+  push:
     branches:
       - master
+
+  pull_request:
+    types: [opened, synchronize, reopened]
       
 jobs:
   run-fc-ci:
