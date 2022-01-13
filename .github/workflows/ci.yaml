@@ -10,13 +10,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-go@v2
 
+      - name: Instalando a aplicação
+        uses: actions/setup-node@v2
         with:
           node-version: 14
-      - run: npm install
 
-      - name: SonarCloud Scan
+      - name: Executando os testes
+        run: npm test
+
+      - name: Executando o SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}  # Needed to get PR information, if any
