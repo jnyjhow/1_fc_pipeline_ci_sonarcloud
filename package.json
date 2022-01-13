@@ -1,0 +1,25 @@
+{
+  "name": "1_fc_pipeline_ci_sonarcloud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jnyjhow/1_fc_pipeline_ci_sonarcloud.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jnyjhow/1_fc_pipeline_ci_sonarcloud/issues"
+  },
+  "homepage": "https://github.com/jnyjhow/1_fc_pipeline_ci_sonarcloud#readme",
+  "dependencies": {
+    "@types/jest": "^27.4.0",
+    "jest": "^27.4.7",
+    "sonar-scanner": "^3.1.0"
+  }
+}
