@@ -16,8 +16,10 @@ jobs:
         with:
           node-version: 14
 
-      - name: Executando os testes
+      - name: Instalando dependências
         run: npm install
+
+      - name: Executando os testes
         run: npm test
 
       - name: Executando o SonarCloud Scan
